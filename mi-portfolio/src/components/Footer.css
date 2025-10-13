@@ -1,0 +1,25 @@
+#footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+#footer nav {
+    margin-top: 1rem;
+}
+
+#footer a {
+    margin: 0 1rem;
+}
+
+#footer a:hover {
+    color: darkorange;
+    text-decoration: none;
+}
+
+#footer .social-links {
+    margin-top: 1rem;
+}
+
+#footer .social-links a {
+    margin: 0 0.5rem;
+}

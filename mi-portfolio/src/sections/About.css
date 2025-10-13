@@ -1,0 +1,72 @@
+#about {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    max-width: 800px;
+    text-align: start;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+}
+
+.about-content section {
+    margin-bottom: 2rem;
+}
+
+.about-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.job-experience h3 {
+    font-size: 1.2rem;
+    color: #ff6600;
+    margin-bottom: 0;
+}
+
+.job-experience p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.about-content strong {
+    color: #ff6600;
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tool-badge {
+    background-color: #222;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+.tool-badge:hover {
+    background-color: #ff6600;
+    cursor: default;
+    transition: background-color 0.3s ease;
+}
