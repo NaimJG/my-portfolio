@@ -39,7 +39,7 @@ ul li::after {
   height: 2px;
   background-color: orange;
   transform: scaleX(0);
-  transform-origin: right;
+  transform-origin: left;
   transition: transform 0.3s ease;
 }
 
