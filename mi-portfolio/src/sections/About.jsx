@@ -1,6 +1,8 @@
 import './About.css';
 
+// Segunda sección de la página
 function About() {
+  // Array de herramientas y tecnologías con sus respectivos íconos para mapear en el JSX
   const tools = [
     { name: "Node.js", icon: "/Node.js.svg" },
     { name: "Express", icon: "/Express.svg"  },
@@ -22,6 +24,7 @@ function About() {
     { name: "Jira", icon: "/Jira.svg"  },
   ];
 
+  // Array de certificaciones para mapear en el JSX
   const certifications = [
     "Curso de Angular: Componentes y Servicios",
     "Curso de Fundamentos de Angular",

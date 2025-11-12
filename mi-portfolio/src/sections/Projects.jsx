@@ -1,5 +1,6 @@
 import './Projects.css';
 
+// Tercera sección de la página
 function Projects() {
   return (
     <section id="projects">

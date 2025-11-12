@@ -1,5 +1,6 @@
 import './Home.css';
 
+// Primera sección de la página
 function Home() {
   return (
     <>
