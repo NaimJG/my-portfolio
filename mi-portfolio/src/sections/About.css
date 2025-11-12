@@ -58,16 +58,14 @@
     gap: 1rem;
 }
 
-.tool-badge {
-    background-color: #222;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.95rem;
+.tool-icon {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
 }
 
-.tool-badge:hover {
-    background-color: #ff6600;
-    cursor: default;
-    transition: background-color 0.3s ease;
+.tool-icon:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
 }

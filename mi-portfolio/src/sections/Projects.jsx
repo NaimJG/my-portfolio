@@ -7,7 +7,7 @@ function Projects() {
       <div className="projects-container">
         <div className="project-card">
           <div className='project-content-left'>
-            <img src="/../EsquinaLiterariaLanding.jpg" alt="Captura de pantalla de la esquina literaria"></img>
+            <img src="/EsquinaLiterariaLanding.jpg" alt="Captura de pantalla de la esquina literaria"></img>
           </div>
           <div className='project-content-right'>
             <h2>La Esquina Literaria</h2>

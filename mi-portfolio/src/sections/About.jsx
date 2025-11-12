@@ -2,17 +2,24 @@ import './About.css';
 
 function About() {
   const tools = [
-    "Node.js",
-    "Express",
-    "React (+ Vite)",
-    "Angular (Typescript)",
-    "Java (Spring Boot)",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "MongoDB",
-    "MySQL",
-    "Oracle BPM",
+    { name: "Node.js", icon: "/Node.js.svg" },
+    { name: "Express", icon: "/Express.svg"  },
+    { name: "React", icon: "/React.svg"  },
+    { name: "Vite", icon: "/public/Vite.svg"  },
+    { name: "Angular", icon: "/Angular.svg"  },
+    { name: "Spring Boot", icon: "/Spring.svg"  },
+    { name: "Python", icon: "/Python.svg"  },
+    { name: "HTML5", icon: "/HTML5.svg"  },
+    { name: "CSS3", icon: "/CSS3.svg"  },
+    { name: "JavaScript", icon: "/JavaScript.svg"  },
+    { name: "TypeScript", icon: "/TypeScript.svg"  },
+    { name: "MongoDB", icon: "/MongoDB.svg"  },
+    { name: "MySQL", icon: "/MySQL.svg"  },
+    { name: "Git", icon: "/Git.svg"  },
+    { name: "GitHub", icon: "/GitHub.svg"  },
+    { name: "Postman", icon: "/Postman.svg"  },
+    { name: "DBeaver", icon: "/DBeaver.svg"  },
+    { name: "Jira", icon: "/Jira.svg"  },
   ];
 
   const certifications = [
@@ -72,16 +79,16 @@ function About() {
           <h2>Herramientas y Tecnologías</h2>
           <div className='tools-list'>
             {tools.map((tool) => (
-              <span key={tool} className='tool-badge'>
-                {tool}
-              </span>
+              <>
+                <img key={tool.name} src={tool.icon} alt={tool.name} title={tool.name} className="tool-icon"/>
+              </>
             ))}
           </div>
         </section>
 
         {/* CERTIFICACIONES */}
         <section>
-          <h2 style={{ fontSize: "1.8rem", marginBottom: "1rem" }}>Certificaciones</h2>
+          <h2>Certificaciones</h2>
           <ul>
             {certifications.map((cert) => (
               <li key={cert}>{cert}</li>
