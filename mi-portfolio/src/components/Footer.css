@@ -9,6 +9,9 @@
 
 #footer a {
     margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 #footer a:hover {
@@ -22,4 +25,75 @@
 
 #footer .social-links a {
     margin: 0 0.5rem;
+}
+
+#footer p {
+    color: white;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Responsive para tablets y dispositivos medianos (hasta 768px) */
+@media (max-width: 768px) {
+    #footer {
+        padding: 1.5rem 1rem;
+    }
+
+    #footer p {
+        font-size: 0.9rem;
+    }
+
+    #footer nav {
+        margin-top: 0.8rem;
+    }
+
+    #footer a {
+        margin: 0 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    #footer .social-links {
+        margin-top: 0.8rem;
+    }
+
+    #footer .social-links a {
+        margin: 0 0.4rem;
+    }
+}
+
+/* Responsive para móviles (hasta 480px) */
+@media (max-width: 480px) {
+    #footer {
+        padding: 1.2rem 0.75rem;
+    }
+
+    #footer p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    #footer nav,
+    #footer .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #footer nav {
+        margin-top: 1rem;
+    }
+
+    #footer a {
+        margin: 0;
+        font-size: 0.9rem;
+        display: block;
+    }
+
+    #footer .social-links {
+        margin-top: 0.8rem;
+    }
+
+    #footer .social-links a {
+        margin: 0;
+    }
 }

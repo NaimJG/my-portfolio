@@ -16,6 +16,24 @@
     height: 50px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+    padding: 0;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    display: block;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -56,4 +74,55 @@ a {
 
 ul li:hover a {
   color: orange;
+}
+
+/* Responsive para tablets y dispositivos medianos (hasta 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navList {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #201f1f;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navList.open {
+        max-height: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+    }
+
+    ul li {
+        padding: 15px 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #333;
+    }
+
+    ul li::after {
+        display: none;
+    }
+
+    ul li:hover a {
+        color: orange;
+    }
+
+    ul li:last-child {
+        border-bottom: none;
+    }
 }

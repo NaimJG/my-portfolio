@@ -70,3 +70,112 @@
     transform: scale(1.5);
     transition: transform 0.3s ease;
 }
+
+/* Responsive para tablets y dispositivos medianos (hasta 768px) */
+@media (max-width: 768px) {
+    #about {
+        padding: 3rem 1.5rem;
+        min-height: auto;
+        padding-top: 100px;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .about-content section {
+        margin-bottom: 1.5rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+
+    .job-experience h3 {
+        font-size: 1.1rem;
+    }
+
+    .job-experience p {
+        font-size: 0.95rem;
+    }
+
+    .about-content ul {
+        padding: 0px;
+    }
+
+    .about-content ul li {
+        font-size: 0.95rem;
+    }
+
+    .tools-list {
+        gap: 0.8rem;
+    }
+
+    .tool-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+    }
+}
+
+/* Responsive para móviles (hasta 480px) */
+@media (max-width: 480px) {
+    #about {
+        padding: 1.5rem 1rem;
+        padding-top: 90px;
+    }
+
+    #about h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .about-content section {
+        margin-bottom: 1rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .job-experience h3 {
+        font-size: 1rem;
+    }
+
+    .job-experience p {
+        font-size: 0.85rem;
+    }
+
+    .about-content ul li {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tools-list {
+        gap: 0.6rem;
+        justify-content: center;
+    }
+
+    .tool-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+    }
+
+    .tool-icon:hover {
+        transform: scale(1.3);
+    }
+}
