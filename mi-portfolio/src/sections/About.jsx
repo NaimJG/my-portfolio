@@ -24,17 +24,6 @@ function About() {
     { name: "Jira", icon: "/Jira.svg"  },
   ];
 
-  // Array de certificaciones para mapear en el JSX
-  const certifications = [
-    "Curso de Angular: Componentes y Servicios",
-    "Curso de Fundamentos de Angular",
-    "Curso de Java SE Orientado a Objetos",
-    "Curso de Java Spring",
-    "Curso de Java Spring Data JPA: Bases de Datos",
-    "Curso Profesional de Git y GitHub",
-    "Curso Profesional de DevOps",
-  ];
-
   return (
     <section id="about">
       <h1 >Sobre mí</h1>
@@ -89,15 +78,6 @@ function About() {
           </div>
         </section>
 
-        {/* CERTIFICACIONES */}
-        <section>
-          <h2>Certificaciones</h2>
-          <ul>
-            {certifications.map((cert) => (
-              <li key={cert}>{cert}</li>
-            ))}
-          </ul>
-        </section>
       </div>
     </section>
   );

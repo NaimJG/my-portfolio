@@ -3,8 +3,6 @@ import './Footer.css';
 function Footer() {
   return (
     <footer id="footer">
-      <p>© 2025 Mi Portfolio — Desarrollado por Naim Cambe</p>
-
       <nav>
         <a href="#about">Sobre mí</a>
         <a href="#projects">Proyectos</a>
@@ -16,6 +14,8 @@ function Footer() {
         <a href="https://www.linkedin.com/in/naim-cambe/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:ncambe.dev@gmail.com">Email</a>
       </div>
+
+      <p>© 2025 Mi Portfolio — Desarrollado por Naim Cambe</p>
     </footer>
   );
 }

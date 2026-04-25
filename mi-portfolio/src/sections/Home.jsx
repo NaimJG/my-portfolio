@@ -10,7 +10,10 @@ function Home() {
           <h2>Desarrollador Full-Stack</h2>
           <p>Bienvenido a mi portafolio personal.</p> 
           <p>Aquí encontrarás información sobre mis proyectos, habilidades y experiencia en desarrollo web.</p>
-          <a href="#contact" className='btn'>Contáctame</a>
+          <div className="cta-buttons">
+            <a href="#contact" className='btn'>Contáctame</a>
+            <a href="/Naim-Cambe-CV.pdf" className='btn' target="_blank" rel="noopener noreferrer" download="Naim-Cambe-CV.pdf">Descargar CV</a>
+          </div>
         </div>
         <div className='home-image'>
           <img src="/naim.jpg" alt="Naim Cambe"></img>
